@@ -1,0 +1,25 @@
+{
+  "name": "cloud-engineer",
+  "version": "1.0.0",
+  "description": "![](https://media.rapha.cc/image/upload/v1673518519/pdp-default-image.png)",
+  "main": "dist/handler.js",
+  "scripts": {
+    "build": "tsc",
+    "zip": "zip -r9 rapha.zip dist node_modules package.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Graeme Lambert",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.616.0",
+    "@types/aws-lambda": "^8.10.141"
+  },
+  "engines": {
+    "node": ">=18.18.0 <19.0.0"
+  }
+}
